@@ -19,10 +19,22 @@ h1, h2 {
     color:#184f63 ;
 }
 /*fix sharp corners class*/
-.sharp-corners 
-.sharp-corners * {
+.sharp-corner 
+.sharp-corner * {
     border-radius: 0;
 }
+ 
+/*buttons*/
+.custom-button {
+    background-color:#1f7798 ;
+    border-color: #1f7798;
+}
+
+.custom-button:hover {
+    background-color:#1d6d8a ;
+    border-color: #1d6d8a;
+}
+
 
 #hero {
     background-color:#dbdcde ;
