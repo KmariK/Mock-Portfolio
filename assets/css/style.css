@@ -18,6 +18,11 @@ h1, h2 {
     font-family:"DM serif Display", serif;
     color:#184f63 ;
 }
+/*fix sharp corners class*/
+.sharp-corners 
+.sharp-corners * {
+    border-radius: 0;
+}
 
 #hero {
     background-color:#dbdcde ;
@@ -38,7 +43,28 @@ h1, h2 {
     background-color:#dbdcde ;
 }
 
+#portfolio .card-title {
+    color:#1f7798 ;
+    font-size: 1.2rem;
+}
+
+#portfolio .btn-outline-secondary:hover {
+  background-color: #1f7798;
+}
+#portfolio .card-text {
+min-height: 120px;
+}
+
 /*Contact section*/
 contact {
     background: white;
 }
+
+/* Media queries */
+
+/* Use Bootstrap breakpoint for XL screens */
+@media screen and (min-width: 1200px) {
+    /* Fixes all portfolio cards being too tall on xl screens */
+    #portfolio .card-text {
+        min-height: auto;
+    }  
