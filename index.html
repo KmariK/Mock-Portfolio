@@ -59,6 +59,10 @@
               <p class="lead mb-5">Let's create something amazing together!</p>
           </div>
       </section>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#subscribeModal">
+  Subcribe to my newsletter!
+  </button>
   </header>
 
   <!-- main content -->
@@ -186,9 +190,9 @@
                   touch. I'm always open to discussing new opportunities and how we
                   can work together to create something amazing!</p>
           </div>
-          <div class="col-12 col-md-10 col-lg-8">
+          <div class="col-12 col-md-10 col-lg-8 mb-4">
               <!-- Add your form here -->
-              <form class="row g-3 mb-4">
+              <form class="row g-3">
                 <div class="col-12 lg-4>
                   <label for="name" class="form-label">Full Name</label>
                   <input type="text" class="form-control" id="name">
@@ -213,6 +217,40 @@
           </div>
       </div>
   </footer>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="subscribeModalLabel">Subscribe</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Join my newsletter for the latest updates on my projects, 
+            coding tips, and industry insights delivered straight to your inbox.</p>
+        </div>
+
+        <form class="row g-3">
+            <div class="col-lg-6">
+            <label for="inputname" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name">
+                </div>
+
+        <div class="col-lg-6">
+            <label for="inputemail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email">
+        </div>
+
+        <div class="col-12 mb-4">
+            <button type="button" class="btn btn-primary">Sign up!</button>
+        </form> 
+        </div>
+      </div>
+    </div>
+  </div>
 
 
     <!-- Bootstrap JS Script-->
